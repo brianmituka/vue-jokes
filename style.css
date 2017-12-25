@@ -1,23 +1,28 @@
-.joke {
-  display: flex;
-  justify-content: center;
-}
-.joke .item-list {
-  padding-top: 20px;
-  list-style: none;
-}
-
-.joke .item-list li {
-  margin-bottom: 17px;
+html {
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 2em;
+  color: #333;
+  font-weight: 100;
+  max-width: 50em;
+  margin: 0 auto;
 }
+
+div:focus {
+  outline: none;
+}
+
 .joke {
-  border: 3px solid red;
+  font-size: 48px;
+  padding-top: 0px;
+  background: #333;
+  color: white;
+  margin-top: 30px;
+}
+
+.item-list {
+  padding-top: 10px;
+  font-size: 24px;
+  list-style: georgian;
 }
