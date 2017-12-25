@@ -1,0 +1,35 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <title>vue Dad JOkes</title>
+    <!--styles-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Material+Icons">
+
+    <!--scripts-->
+    <script src="https://unpkg.com/vue@2.1.10/dist/vue.js" charset="utf-8"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <joke></joke>
+    </div>
+    <template id="joke">
+    <div class="joke">
+      <ul class="item-list">
+        <li v-for="joke in jokes">{{joke.joke}}</li>
+      </ul>
+
+    </div>
+
+
+    </template>
+
+
+    <script src = "app.js" charset="utf-8"></script>
+  </body>
+  <!--this is a snippet created by these guys fork!-->
+  </html>
