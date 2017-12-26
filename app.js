@@ -5,9 +5,7 @@ var joke = Vue.component('joke', {
       jokes: []
     };
   },
-  // props: ['joke'],
   created() {
-    //do something after creating vue instance
     axios
       .get('https://icanhazdadjoke.com/search', {
         headers: {
@@ -19,8 +17,6 @@ var joke = Vue.component('joke', {
       })
       .then(response => {
         this.jokes = response.data.results;
-        // console.log(response.data.results);
-        // console.log(this.jokes);
       });
   }
 });
